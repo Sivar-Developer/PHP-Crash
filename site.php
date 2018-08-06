@@ -42,6 +42,27 @@
         echo "<br>";
         echo str_replace("Bivar", "Stealth", $phrase);  // Replace String characters
         echo substr($phrase, 6, 7);             // Return part of a string
+        echo "<br>";
+
+        // Working with numbers
+        echo 40;                // Positive number
+        echo -40;               // Negative number
+        echo 40.4365;           // Decimal number
+        echo 5.456 * 7.54;      // Math operations
+        echo (4 + 5) * 10;
+        echo 10 % 3;            // Mode
+        $num = 10;
+        $num--;                 // Subtract 1 to num variable
+        $num = $num + 25;       // Add 25 to num variable
+        echo $num;
+        echo abs(-100);         // Absolute value of number
+        echo pow(2, 4);         // 2 power 4 or 2^4
+        echo sqrt(144);         // Square root of number
+        echo max(2, 10);        // Maximum number choosing between two numbers
+        echo min(2, 10);        // Minimum number choosing between two numbers
+        echo round(3.2);        // Round of number
+        echo ceil(3.4);         // Ceil of number 3.1 ... >> 4
+        echo floor(3.4);        // Floor of number
     ?>
 
 </body>
