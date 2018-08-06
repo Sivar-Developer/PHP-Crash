@@ -250,5 +250,35 @@
         }
     ?> <hr>
 
+    <!-- Switch statements -->
+    <h6>Switch statements</h6>
+    <form action="site.php" method="post">
+    What is Your grade?
+    <input type="text" name="grade" id="">
+    <input type="submit">
+    </form>
+    <?php
+        $grade = $_POST["grade"];
+        switch ($grade) {
+            case "A":
+                echo "You did amazing!";
+                break;
+            case "B":
+                echo "You did well";
+                break;
+            case "C":
+                echo "You did poorly";
+                break;
+            case "D":
+                echo "You did bad";
+                break;
+            case "F":
+                echo "You failed!";
+                break;
+            default:
+                echo "Invalid grade";
+        }
+    ?>
+
 </body>
 </html>
