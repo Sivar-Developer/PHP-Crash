@@ -222,7 +222,33 @@
         }
 
         echo getMax(640, 1145, 453);
-    ?>
+    ?><hr>
+
+    <!-- Building a Better Calculator -->
+    <h6>Building a Better Calculator</h6>
+    <form action="site.php" method="post">
+        First Num: <input type="number" step="0.1" name="num1" id=""> <br>
+        Operator: <input type="text" name="op" id=""> <br>
+        Second Num: <input type="number" name="num2" id=""> <br>
+    <input type="submit">
+    </form>
+    <?php
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+        $op = $_POST["op"];
+
+        if ($op == "+") {
+            echo $num1 + $num2;
+        } elseif($op == "-") {
+            echo $num1 - $num2;
+        } elseif($op == "/") {
+            echo $num1 / $num2;
+        } elseif($op == "*") {
+            echo $num1 * $num2;
+        } else {
+            echo "Invalid Operator";
+        }
+    ?> <hr>
 
 </body>
 </html>
