@@ -278,6 +278,23 @@
             default:
                 echo "Invalid grade";
         }
+    ?> <hr>
+
+    <!-- While loops and Do while loops -->
+    <h6>While loops and Do while loops</h6>
+    <?php
+        $index = 1;
+        while ($index <= 5) {
+            echo "$index <br>";
+            $index++;
+        }
+
+        echo "do while loop: <br>";
+
+        do {
+            echo "$index <br>";
+            $index++;
+        } while ($index <= 10)
     ?>
 
 </body>
