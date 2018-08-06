@@ -183,7 +183,7 @@
         sayHi("World", 40);
     ?>
 
-    <!-- Return statments -->
+    <!-- Return statements -->
     <?php
         function cube($num) {
             return $num * $num * $num;
@@ -192,6 +192,21 @@
         $cubeResult = cube(4);
         echo $cubeResult;
         echo cube(6);
+    ?><hr>
+
+    <!-- If statements -->
+    <?php
+        $isMale = false;
+        $isTall = true;
+        if ($isMale && $isTall) {
+            echo "You are a tall male";
+        } elseif($isMale && !$isTall) {
+            echo "You are a short male";
+        } elseif(!$isMale && $isTall) {
+            echo "You are not male but tall";
+        } else {
+            echo "You are not male";
+        }
     ?>
 
 </body>
