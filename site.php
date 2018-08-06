@@ -130,6 +130,7 @@
     <hr>
 
     <!-- Arrays -->
+    <h4>Arrays</h4>
     <?php
         $friends = array("sivar", "sivan", "savan", "sarkawt");
         $friends[2] = "No Matter";
@@ -144,6 +145,7 @@
     ?><hr>
 
     <!-- Using checkboxes -->
+    <h4>Using Checkboxes</h4>
     <form action="site.php" method="post">
         Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
         Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
@@ -156,6 +158,7 @@
     ?><hr>
 
     <!-- Associative Arrays -->
+    <h4>Associative Arrays</h4>
     <form action="site.php" method="post">
         <input type="text" name="student" id="">
     <input type="submit">
@@ -166,6 +169,18 @@
         $grades["Jim"] = "F";
         echo $grades["Jim"];
         echo count($grades);
+    ?><br><br>
+
+    <!-- Functions -->
+    <h4>Functions</h4>
+    <?php
+        function sayHi($name, $age) {
+            echo "Hello $name, You are $age <br>";
+        }
+
+        sayHi("Sivar", 23);        // Calling Function
+        sayHi("Tom", 13);
+        sayHi("World", 40);
     ?>
 
 </body>
