@@ -321,6 +321,30 @@
         include "useful-tool.php";
         SaidHi("sivar");
         echo $feetInMile;
+    ?><hr>
+
+    <!-- Class and Object -->
+    <h4>Class and Object</h4>
+    <?php
+        class Book {
+            var $title;
+            var $auther;
+            var $pages;
+        }
+
+        $book1 = new Book;
+        $book1->title = "Harry Potter";
+        $book1->auther = "JK Rowling";
+        $book1->pages = 435;
+
+        $book2 = new Book;
+        $book2->title = "Lord of the rings";
+        $book2->auther = "Anyone";
+        $book2->pages = 585;
+
+        echo $book1->title;
+        echo "<br>";
+        echo $book2->title;
     ?>
 
     <!-- Including HTML footer -->
