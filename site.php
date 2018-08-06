@@ -153,6 +153,19 @@
     <?php
         $fruits = $_POST["fruits"];
         echo $fruits[0];
+    ?><hr>
+
+    <!-- Associative Arrays -->
+    <form action="site.php" method="post">
+        <input type="text" name="student" id="">
+    <input type="submit">
+    </form>
+    <?php
+        $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
+        echo $grades[$_POST["student"]];
+        $grades["Jim"] = "F";
+        echo $grades["Jim"];
+        echo count($grades);
     ?>
 
 </body>
