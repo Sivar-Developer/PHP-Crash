@@ -7,6 +7,9 @@
     <title>PHP App</title>
 </head>
 <body>
+
+        <!-- Including HTML header -->
+        <?php include "header.html" ?>
     
     <?php
         // Variables
@@ -305,6 +308,9 @@
             echo "$lucky[$i] <br>";
         }
     ?>
+
+    <!-- Including HTML footer -->
+    <?php include "footer.html" ?>
 
 </body>
 </html>
