@@ -88,5 +88,23 @@
 
     <?php echo $_GET["num1"] + $_GET["num2"] ?>
 
+    <!-- Building a mad libs game -->
+    <form action="site.php" method="get">
+        Color : <input type="text" name="color" id=""><br>
+        Plural Noun : <input type="text" name="pluralNoun" id=""><br>
+        celebrity : <input type="text" name="celebrity" id=""><br>
+        <input type="submit">
+    </form>
+    <br><br>
+
+    <?php
+        $color = $_GET["color"];
+        $pluralNoun = $_GET["pluralNoun"];
+        $celebrity = $_GET["celebrity"];
+        echo "Roses are $color <br>";
+        echo "$pluralNoun are blue <br>";
+        echo "I love $celebrity <br>";
+    ?>
+
 </body>
 </html>
