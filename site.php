@@ -295,6 +295,15 @@
             echo "$index <br>";
             $index++;
         } while ($index <= 10)
+    ?> <hr>
+
+    <!-- For loops -->
+    <h4>For loops</h4>
+    <?php
+        $lucky = array(4, 5, 9, 12, 1, 23, 54, 6);
+        for ($i = 1; $i < count($lucky); $i++) {
+            echo "$lucky[$i] <br>";
+        }
     ?>
 
 </body>
