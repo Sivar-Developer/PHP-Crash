@@ -67,7 +67,6 @@
     ?>
 
     <!-- Get User input -->
-
     <form action="site.php" method="get">
         <label for="name">Name: </label>
         <input type="text" name="username" id=""><br>
@@ -77,6 +76,17 @@
     </form>
     <br> Your name is <?php echo $_GET["username"]; ?>
     <br> Your Age is <?php echo $_GET["age"]; ?>
+    <br>
+
+    <!-- Building a basic calculator -->
+    <h4>Calculator</h4>
+    <form action="site.php" method="get">
+        <input type="number" name="num1" id=""><br>
+        <input type="number" name="num2" id="">
+        <input type="submit">
+    </form>
+
+    <?php echo $_GET["num1"] + $_GET["num2"] ?>
 
 </body>
 </html>
