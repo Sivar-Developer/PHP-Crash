@@ -207,6 +207,21 @@
         } else {
             echo "You are not male";
         }
+    ?><hr>
+
+    <!-- If statements (Con't) -->
+    <?php
+        function getMax($num1, $num2, $num3) {
+            if ($num1 >= $num2 && $num1 >=$num3) {
+                return $num1;
+            } elseif ($num2 >= $num1 && $num2 >= $num3) {
+                return $num2;
+            } else {
+                return $num3;
+            }
+        }
+
+        echo getMax(640, 1145, 453);
     ?>
 
 </body>
