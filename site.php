@@ -86,9 +86,10 @@
         <input type="submit">
     </form>
 
-    <?php echo $_GET["num1"] + $_GET["num2"] ?>
+    <?php echo $_GET["num1"] + $_GET["num2"] ?> <hr>
 
     <!-- Building a mad libs game -->
+    <h4>Building a mad libs game</h4>
     <form action="site.php" method="get">
         Color : <input type="text" name="color" id=""><br>
         Plural Noun : <input type="text" name="pluralNoun" id=""><br>
@@ -96,7 +97,6 @@
         <input type="submit">
     </form>
     <br><br>
-
     <?php
         $color = $_GET["color"];
         $pluralNoun = $_GET["pluralNoun"];
@@ -107,14 +107,26 @@
     ?>
 
     <!-- URL Parameters -->
+    <h4>URL Parameters</h4>
     <form action="site.php" method="get">
         Name: <input type="text" name="name"><br>
         <input type="submit">
     </form>
     <br><br>
-
     <?php 
         echo $_GET["name"];
+    ?>
+
+    <!-- POST Requests -->
+    <h4>POST Requests</h4>
+    <form action="site.php" method="post">
+        Password: <input type="password" name="password"><br>
+        <input type="submit">
+    </form>
+    <br><br>
+
+    <?php 
+        echo $_POST["password"];
     ?>
 
 </body>
