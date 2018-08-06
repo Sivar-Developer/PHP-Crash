@@ -63,7 +63,20 @@
         echo round(3.2);        // Round of number
         echo ceil(3.4);         // Ceil of number 3.1 ... >> 4
         echo floor(3.4);        // Floor of number
+        echo "<br>";
     ?>
+
+    <!-- Get User input -->
+
+    <form action="site.php" method="get">
+        <label for="name">Name: </label>
+        <input type="text" name="username" id=""><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="">
+        <input type="submit">
+    </form>
+    <br> Your name is <?php echo $_GET["username"]; ?>
+    <br> Your Age is <?php echo $_GET["age"]; ?>
 
 </body>
 </html>
