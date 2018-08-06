@@ -309,6 +309,20 @@
         }
     ?>
 
+    <!-- Including PHP -->
+    <?php 
+        $title = "My pure php site";
+        $author = "Sivar Sarkawt";
+        $wordCount = 400;
+        include "article-header.php";
+    ?>
+
+    <?php
+        include "useful-tool.php";
+        SaidHi("sivar");
+        echo $feetInMile;
+    ?>
+
     <!-- Including HTML footer -->
     <?php include "footer.html" ?>
 
