@@ -124,9 +124,23 @@
         <input type="submit">
     </form>
     <br><br>
-
     <?php 
         echo $_POST["password"];
+    ?>
+    <hr>
+
+    <!-- Arrays -->
+    <?php
+        $friends = array("sivar", "sivan", "savan", "sarkawt");
+        $friends[2] = "No Matter";
+        $friends[2] = 400;
+
+        echo $friends[2];
+        echo "<br>";
+        echo count($friends);
+        // echo $friends[1];
+        // echo $friends[2];
+        // echo $friends[3];
     ?>
 
 </body>
