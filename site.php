@@ -330,17 +330,24 @@
             var $title;
             var $auther;
             var $pages;
+
+            function __construct($aTitle, $aAuthor, $aPages){
+                // echo "$name <br>";
+                $this->title = $aTitle;
+                $this->author = $aAuthor;
+                $this->pages = $aPages;
+            }
         }
 
-        $book1 = new Book;
-        $book1->title = "Harry Potter";
-        $book1->auther = "JK Rowling";
-        $book1->pages = 435;
+        $book1 = new Book("Harry Potter", "JK Rowling", 435);
+        $book1->title = "Harry Potter : Prisoner of Azkaban";
+        // $book1->auther = "JK Rowling";
+        // $book1->pages = 435;
 
-        $book2 = new Book;
-        $book2->title = "Lord of the rings";
-        $book2->auther = "Anyone";
-        $book2->pages = 585;
+        $book2 = new Book("Lord of the rings", "Anyone", 585);
+        // $book2->title = "Lord of the rings";
+        // $book2->auther = "Anyone";
+        // $book2->pages = 585;
 
         echo $book1->title;
         echo "<br>";
