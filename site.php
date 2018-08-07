@@ -414,6 +414,43 @@
 
     ?> <hr>
 
+    <!-- Inheritance -->
+    <?php
+        class Chef {
+            function makeChicken() {
+                echo "The chief makes a chicken <br>";
+            }
+
+            function makeSalad() {
+                echo "The chief makes a salad <br>";
+            }
+
+            function makeSpecialDish() {
+                echo "The chief makes a bibiq ribs <br>";
+            }
+        }
+
+        class ItalianChef extends Chef {
+            function makePasta() {
+                echo "The Italian Chef can make pasta <br>";
+            }
+
+            function makeSpecialDish() {
+                echo "The Italian Chef make chicken parms <br>";
+            }
+        }
+
+        $chef = new Chef();
+        $chef->makeChicken();
+        $chef->makeSpecialDish();
+        // $chef->makePasta();  // will uncaght error because not part of chef class and not exteded
+
+        $italianChef = new ItalianChef();
+        $italianChef->makeChicken();    // Extended from Chef class
+        $italianChef->makeSpecialDish();    // Extended form chef class , BUT overwrited be using same function
+        $italianChef->makePasta();
+    ?>
+
     <!-- Including HTML footer -->
     <?php include "footer.html" ?>
 
