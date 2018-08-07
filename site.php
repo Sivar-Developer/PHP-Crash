@@ -381,7 +381,38 @@
         $student2 = new Student("Jim", "Art", 99.4);
 
         echo $student2->hasHonors();
-    ?>
+    ?> <hr>
+
+    <!-- Getters and Setters -->
+    <h6>Getters and Setters</h6>
+    <?php
+        class Movie {
+            public $title;
+            private $rating;
+
+            function __construct($title, $rating) {
+                $this->title = $title;
+                $this->setRating($rating);
+            }
+
+            function getRating() {
+                return $this->rating;
+            }
+
+            function setRating($rating) {
+                if($rating == "G" || $rating == "PG" || $rating == "PG-13") {
+                    $this->rating = $rating;
+                } else {
+                    $this->rating = "NR";
+                }
+            }
+        }
+
+        $avengers = new Movie("Avengers", "PG-13");
+        // $avengers->rating = "Anything";
+        echo $avengers->getRating();
+
+    ?> <hr>
 
     <!-- Including HTML footer -->
     <?php include "footer.html" ?>
