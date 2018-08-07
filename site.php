@@ -331,6 +331,7 @@
             var $auther;
             var $pages;
 
+            // Constructors
             function __construct($aTitle, $aAuthor, $aPages){
                 // echo "$name <br>";
                 $this->title = $aTitle;
@@ -352,6 +353,34 @@
         echo $book1->title;
         echo "<br>";
         echo $book2->title;
+    ?> <hr>
+
+    <!-- Function objects -->
+    <h4>Function objects</h4>
+    <?php
+        class Student {
+            var $name;
+            var $major;
+            var $gpa;
+
+            function __construct($name, $major, $gpa) {
+                $this->name = name;
+                $this->major = major;
+                $this->gpa = gpa;
+            }
+
+            function hasHonors(){
+                if($this->gpa >= 2.5){
+                    return "true";
+                }
+                return "false";
+            }
+        }
+
+        $student1 = new Student("Sivar", "anything", 3.4);
+        $student2 = new Student("Jim", "Art", 99.4);
+
+        echo $student2->hasHonors();
     ?>
 
     <!-- Including HTML footer -->
